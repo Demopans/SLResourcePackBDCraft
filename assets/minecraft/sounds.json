@@ -1,0 +1,44 @@
+{
+    "random.door_close": {
+        "category": "block",
+        "replace": true,
+        "sounds": [
+            "random/door_close"
+        ]
+    },
+    "random.door_open": {
+        "category": "block",
+        "replace": true,
+        "sounds": [
+            "random/door_open"
+        ]
+    },
+    "creeper.primed": {
+        "category": "hostile",
+        "replace": true,
+        "sounds": [
+            "random/creeperfuse"
+        ]
+    },
+    "energy_sword.idle": {
+        "sounds": ["energy_sword/idle"]
+    },
+    "energy_sword.strike": {
+        "sounds": ["energy_sword/strike"]
+    },
+    "energy_sword.off": {
+        "sounds": ["energy_sword/off"]
+    },
+    "energy_sword.on": {
+        "sounds": ["energy_sword/on"]
+    },
+    "energy_sword.swing": {
+        "sounds": ["energy_sword/swing"]
+    },
+    "starships.ambience": {
+        "sounds": ["starship_ambience"]
+    },
+    "laser": {
+        "sounds": ["laser"]
+    }
+}
