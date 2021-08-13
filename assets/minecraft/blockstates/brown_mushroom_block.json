@@ -1,17 +1,76 @@
 {
-    "variants": {
-        "variant=north_west": { "model": "custom/ores/copper_ore" },
-        "variant=north": { "model": "custom/ores/aluminum_ore" },
-        "variant=north_east": { "model": "custom/ores/chetherite_ore" },
-        "variant=west": { "model": "custom/ores/titanium_ore" },
-        "variant=center": { "model": "custom/ores/uranium_ore" },
-        "variant=east": { "model": "custom/ores/copper_block" },
-        "variant=south_west": { "model": "custom/ores/aluminum_block" },
-        "variant=south": { "model": "custom/ores/chetherite_block" },
-        "variant=south_east": { "model": "custom/ores/titanium_block" },
-        "variant=stem": { "model": "custom/ores/uranium_block" },
-        "variant=all_inside": { "model": "brown_mushroom_block_inside_all" },
-        "variant=all_outside": { "model": "custom/ores/oriomium_ore" },
-        "variant=all_stem": { "model": "custom/ores/oriomium_block" }
-    }
+    "multipart": [
+        {
+            "when": { "down": false, "east": false, "north": true, "south": false, "up": true, "west": false },
+            "apply": { "model": "block/custom/ores/aluminum_ore"}
+        },
+        {
+            "when": { "down": false, "east": false, "north": false, "south": true, "up": true, "west": true },
+            "apply": { "model": "block/custom/ores/aluminum_block"}
+        },
+        {
+            "when": { "down": false, "east": true, "north": true, "south": false, "up": true, "west": false },
+            "apply": { "model": "block/custom/ores/chetherite_ore"}
+        },
+        {
+            "when": { "down": false, "east": false, "north": false, "south": true, "up": true, "west": false },
+            "apply": { "model": "block/custom/ores/chetherite_block"}
+        },
+        {
+            "when": { "down": false, "east": false, "north": true, "south": false, "up": true, "west": true },
+            "apply": { "model": "block/custom/ores/copper_ore"}
+        },
+        {
+            "when": { "down": false, "east": true, "north": false, "south": false, "up": true, "west": false },
+            "apply": { "model": "block/custom/ores/copper_block"}
+        },
+        {
+            "when": { "down": false, "east": false, "north": false, "south": false, "up": true, "west": true },
+            "apply": { "model": "block/custom/ores/titanium_ore"}
+        },
+        {
+            "when": { "down": false, "east": true, "north": false, "south": true, "up": true, "west": false },
+            "apply": { "model": "block/custom/ores/titanium_block"}
+        },
+        {
+            "when": { "down": false, "east": false, "north": false, "south": false, "up": true, "west": false },
+            "apply": { "model": "block/custom/ores/uranium_ore"}
+        },
+        {
+            "when": { "down": false, "east": true, "north": true, "south": true, "up": false, "west": true },
+            "apply": { "model": "block/custom/ores/uranium_block"}
+        },
+        {
+            "when": { "down": true, "east": true, "north": true, "south": true, "up": true, "west": true },
+            "apply": { "model": "block/custom/ores/oriomium_ore"}
+        },
+        {
+            "when": { "down": true, "east": false, "north": false, "south": false, "up": false, "west": false },
+            "apply": { "model": "block/custom/ores/oriomium_block"}
+        },
+        {
+            "when": { "down": true, "east": false, "north": false, "south": false, "up": false, "west": true },
+            "apply": { "model": "block/custom/rocket/rocket_oriomium_south" }
+        },
+        {
+            "when": { "down": true, "east": false, "north": false, "south": false, "up": true, "west": false },
+            "apply": { "model": "block/custom/rocket/rocket_oriomium_north" }
+        },
+        {
+            "when": { "down": true, "east": false, "north": false, "south": false, "up": true, "west": true },
+            "apply": { "model": "block/custom/rocket/rocket_oriomium_east" }
+        },
+        {
+            "when": { "down": true, "east": false, "north": false, "south": true, "up": false, "west": false },
+            "apply": { "model": "block/custom/rocket/rocket_oriomium_west" }
+        },
+        {
+            "when": { "down": true, "east": false, "north": false, "south": true, "up": false, "west": true },
+            "apply": { "model": "block/custom/rocket/rocket_oriomium_down" }
+        },
+        {
+            "when": { "down": true, "east": false, "north": false, "south": true, "up": true, "west": true },
+            "apply": { "model": "block/custom/rocket/rocket_oriomium_up" }
+        }
+    ]
 }
